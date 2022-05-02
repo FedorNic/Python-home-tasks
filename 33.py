@@ -5,4 +5,9 @@
 from random import randint
 
 k = 2
-m = randint(0,101)
+first = randint(0,101)
+second = randint(0,101)
+third = randint(0,101)
+form = [f'{first}*x^{k} + {second}*x + {third} = 0']
+with open('33.txt', 'w') as data:
+    data.writelines(form)
