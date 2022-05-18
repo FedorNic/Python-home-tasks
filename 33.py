@@ -4,7 +4,7 @@
 
 from random import randint
 
-k = 2
+k = 0
 first = randint(0,101)
 second = randint(0,101)
 third = randint(0,101)
