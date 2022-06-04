@@ -1,3 +1,3 @@
-import controller
+import UI
 
-controller.run()
+UI.operations()

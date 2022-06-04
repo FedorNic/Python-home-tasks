@@ -1,9 +1,9 @@
-from get_push_data import get_data
-from get_push_data import push_data
+from read_push_data import read_data
+from read_push_data import push_data
 
 
 def add_data():
-    result_list = get_data()
+    result_list = read_data()
     id = int(len(result_list))
     string = ''
     string += str(id)+';'      # list[0] - это Id ученика)

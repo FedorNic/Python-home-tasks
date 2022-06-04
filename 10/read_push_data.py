@@ -10,7 +10,7 @@ def summa(a):
     return result.replace('\n', '')+'\n'
 
 
-def get_data():
+def read_data():
     with open('name.csv', 'r') as name:
         name = name.readlines()
 
