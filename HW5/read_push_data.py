@@ -3,14 +3,14 @@ from itertools import zip_longest
 from unittest import result
 
 
-def summa(a):
+def summa(a):       # Для работы со строками
     result = ''
     for i in range(3):
         result += a[i]
     return result.replace('\n', '')+'\n'
 
 
-def read_data():
+def read_data():     # Считываем строки из 3-х файлов и складываем в списки
     with open('name.csv', 'r') as name:
         name = name.readlines()
 
@@ -19,11 +19,11 @@ def read_data():
 
     with open('adress.csv', 'r') as adress:
         adress = adress.readlines()
-    list = [summa(i)for i in zip(name, classe, adress)]
+    list = [summa(i)for i in zip(name, classe, adress)]     # Склеивание 3-х списков в один
     return list
 
 
-def push_data(str):
+def push_data(str):     # Режем полученную на вводе строку и раскидываем по файлам
     str = str.split(';')
     with open('name.csv', 'a') as name:
         for i in range(0, 5):

@@ -7,7 +7,7 @@ def operations():
     a = input('Выберите действие: ')
     while True:
         if a == '1':
-            print(*read_data())      # Добавление в кортеж
+            print(*read_data())     # Для красоты вывода
             operations()        # Повторный запуск программы, чтобы она не закрывалась каждый раз
         if a == '2':
             add_data()
